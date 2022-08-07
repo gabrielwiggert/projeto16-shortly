@@ -5,3 +5,10 @@ CREATE TABLE users (
   password TEXT NOT NULL,
   "createdAt" TIMESTAMP DEFAULT NOW()
 );
+
+CREATE TABLE sessions (
+   id SERIAL PRIMARY KEY,
+   token TEXT NOT NULL UNIQUE,
+   "userId" INT NOT NULL REFERENCES users(id),
+   "createdAt" TIMESTAMP DEFAULT NOW()
+);
