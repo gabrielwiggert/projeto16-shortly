@@ -1,9 +1,7 @@
-CREATE TABLE "public.users" (
-	"id" serial NOT NULL,
-	"name" varchar(100) NOT NULL,
-	"email" varchar(100) NOT NULL UNIQUE,
-	"password" varchar(30) NOT NULL,
-	CONSTRAINT "users_pk" PRIMARY KEY ("id")
-) WITH (
-  OIDS=FALSE
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL UNIQUE,
+  password TEXT NOT NULL,
+  "createdAt" TIMESTAMP DEFAULT NOW()
 );

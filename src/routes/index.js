@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-import rentalsRouter from './rentalsRouter.js';
+import signupRouter from './signupRouter.js';
 
 const router = Router();
 
-router.use(rentalsRouter);
+router.use(signupRouter);
 
 export default router;

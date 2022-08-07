@@ -4,9 +4,9 @@ const { Pool } = pkg;
 
 const connection = new Pool({
   host: 'localhost',
-  port: 5000,
+  port: 5432,
   user: 'postgres',
-  password: 'password',
+  password: 'postgrespw',
   database: 'shortly'
 });
 
