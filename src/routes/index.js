@@ -5,6 +5,7 @@ import signupRouter from './signupRouter.js';
 import urlsShortenRouter from './urlsShortenRouter.js';
 import getUrlByIdRouter from './getUrlByIdRouter.js';
 import openRouter from './openRouter.js';
+import deleteUrlByIdRouter from './deleteUrlByIdRouter.js';
 
 const router = Router();
 
@@ -13,5 +14,6 @@ router.use(signupRouter);
 router.use(urlsShortenRouter);
 router.use(getUrlByIdRouter);
 router.use(openRouter);
+router.use(deleteUrlByIdRouter);
 
 export default router;
