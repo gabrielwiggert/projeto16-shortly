@@ -1,4 +1,3 @@
-import bcrypt from 'bcrypt';
 import getUrlByIdRepository from '../repositories/getUrlByIdRepository.js';
 
 export async function getUrlById(req, res) {
