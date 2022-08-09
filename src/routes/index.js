@@ -7,6 +7,7 @@ import getUrlByIdRouter from './getUrlByIdRouter.js';
 import openRouter from './openRouter.js';
 import deleteUrlByIdRouter from './deleteUrlByIdRouter.js';
 import getMeRouter from './getMeRouter.js';
+import getRankingRouter from './getRankingRouter.js';
 
 const router = Router();
 
@@ -17,5 +18,6 @@ router.use(getUrlByIdRouter);
 router.use(openRouter);
 router.use(deleteUrlByIdRouter);
 router.use(getMeRouter);
+router.use(getRankingRouter); 
 
 export default router;
