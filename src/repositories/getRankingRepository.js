@@ -1,6 +1,6 @@
 import connection from '../db/pgsql.js';
 
-async function getRanking(id) {
+async function getRanking() {
 	return connection.query(`
 		SELECT users.id, users.name, COUNT(urls.id) as "linksCount", SUM(urls."visitCount") as "visitCount" FROM urls
 		JOIN users ON urls."userId" = users.id
