@@ -1,10 +1,9 @@
 import getRankingRepository from '../repositories/getRankingRepository.js';
 
 export async function getRanking(req, res) {
-  const { id } = req.params;
 
   try {
-    const result = await getRankingRepository.getRanking(id);
+    const result = await getRankingRepository.getRanking();
     if (result.rowCount === 0) {
       return res.sendStatus(404);
     }
